@@ -70,7 +70,7 @@ input.radio, input.checkbox, input.submit{
 .radio{
     margin-right: 1em;
 } */
-body{
+/* body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: #643d87 url(../imagens/fundo.jpg) no-repeat top center;
 }
@@ -92,7 +92,7 @@ body{
     height: 120px;
     margin-top: -60px;
     margin-bottom: 30px;
-    /* centralzar imagem no container text-align */
+    /* centralzar imagem no container text-align 
 }
 
 input{
@@ -128,4 +128,36 @@ input.submit{
 
 .submit:hover{
     cursor: pointer;
+} */
+
+/* =================================================================
+Arredondamento com imagens */
+
+.caixa{
+    width: 400px;
+    background: #dedede url(../imagens/fundo-arredondamento.png) repeat-y;
 }
+
+.caixa h2{
+    padding: 10px 20px 0 20px;
+    background: url(../imagens/topo2.png) no-repeat left top;
+}
+
+.caixa p{
+    padding: 0 20px;
+    margin-bottom: 0;
+}
+
+.caixa .ultimo{
+    background: url(../imagens/baixo2.png) no-repeat left bottom;
+    width: 400px;
+    height: 24px;
+}
+/* .caixa h2{
+    padding: 10px 20px 0 20px;
+}
+
+.caixa p{
+    background: url(../imagens/baixo.png) no-repeat left bottom;
+    padding: 0 20px 20px 20px;
+} */
