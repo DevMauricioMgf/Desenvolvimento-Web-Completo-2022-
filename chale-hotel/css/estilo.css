@@ -128,6 +128,9 @@ ul#navegacao a:hover{
     padding: 15px 0;
 }
 
+/* Area lateral */
+/**************************/
+
 #area-lateral{
     width: 50%;
     float: right;
@@ -140,6 +143,7 @@ ul#navegacao a:hover{
     width: 90%;
 }
 
+/* Rodapé */
 #rodape{
     clear: both;
     padding: 16px;
@@ -163,7 +167,31 @@ p{
     border-bottom: grey;
     padding: 10px;
 }
+/* Formatações da área lateral */
+#lista-comodidade li{
+    padding: 8px;
+    border-bottom: 1px solid #f3efcb;
+    height: 6em;
+}
 
-.lista-comodidades{
-    
+#lista-comodidade li a img{
+    float: left;
+    margin-right: 8px;
+}
+
+#lista-comodidade li a p{
+    font-size: 0.8em;
+    color: black;
+}
+
+#lista-comodidade li a h3{
+    color: #6e672c;
+    font-size: 1em;
+    padding: 5px 0;
+    background: url(../imagens/ornamento.png) no-repeat center right;
+}
+
+#lista-comodidade li:hover{
+    background: #f3f3cb;
+    cursor: pointer;
 }
