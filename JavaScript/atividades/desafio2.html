@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio2 - Javascript</title>
+    
+</head>
+<body>
+
+    <input type="text" name="campo" id="campo">
+    <button onclick="adicionar()" id="adicionar" type="submit">Adicionar</button>
+    <button onclick= ordenar() id="ordenar" type="submit">Ordenar</button>    
+    
+</body>
+    <script>
+        var objetos = Array('Cadeira', 'Impressora' , 'Garfo')
+
+        function adicionar(){
+            var input = document.getElementById('campo')
+            var texto = input.value
+            document.getElementById('campo').value = ''
+            var auxiliar = objetos.indexOf(texto)
+
+            if(auxiliar === -1) {
+                objetos.push(texto)
+                console.log(objetos)
+            } else {
+                alert('Objeto ja existe')
+            }
+
+            if(texto === ''){
+                alert('Informe um valor válido')
+            }
+        }
+
+        function ordenar(){
+            console.log(objetos.sort())
+        }
+
+    </script>
+</html>
