@@ -58,13 +58,16 @@
 
     <h3 class="border-bottom">Cartão com cabeçalho</h3>
 
-    <div class="card text-white">
+    <div class="card">
+      <div class="card-header">
+        Cabeçalho do cartão
+      </div>
       
-      <div class="card-img-overlay">
+      <div class="card-body">
         <h4 class="card-title">Título do cartão</h4>
         <h6 class="card-subtitle">Subtítulo do cartão</h6>
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
-        <a class="btn btn-outline-light" href="">Leia mais</a>
+        <a class="btn btn-outline-danger" href="">Leia mais</a>
       </div>
     </div>
     
@@ -72,22 +75,38 @@
     <br><br>
 
     <h3 class="border-bottom">Cartão com cabeçalho e rodapé / Alinhamento</h3>
+    <div class="card text-center">
+      <div class="card-header text-left">
+        Cabeçalho do cartão
+      </div>
+      
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a class="btn btn-outline-danger" href="">Leia mais</a>
+      </div>
+
+      <div class="card-footer">
+        Rodapé do cartão
+      </div>
+    </div>
     
 
     <br><br>
 
     <h3 class="border-bottom">Cartão com navegação</h3>
-    <div>
-      <div>
-        <ul>
-          <li>
-            <a href="">Link 1</a>
+    <div class="card">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+            <a class="nav-link" href="">Link 1</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="">Link 2</a>
+          </li class="nav-item">
           <li>
-            <a href="">Link 2</a>
-          </li>
-          <li>
-            <a href="">Link 3</a>
+            <a class="nav-link active" href="">Link 3</a>
           </li>
         </ul>
       </div>
@@ -95,7 +114,7 @@
         <h4>Título do cartão</h4>
         <h6>Subtítulo do cartão</h6>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
-        <a href="">Leia mais</a>
+        <a href="" class="btn btn-outline-danger btn-block">Leia mais</a>
       </div>
     </div>
 
