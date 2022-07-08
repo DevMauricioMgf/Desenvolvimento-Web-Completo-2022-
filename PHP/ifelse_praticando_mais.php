@@ -12,10 +12,18 @@
     
         //
         $usuario_possui_cartao_loja = true;
-        $valor_compra = 300;
+        $valor_compra = 50;
 
         $valor_frete = 50;
         $recebeu_desconto_frete = true;
+
+        /* OPERADORES TERNÁRIOS SE TORNAM COMPLEXOS QUANDO ENCADEADOS */
+
+        /* $valor_frete_aux = $usuario_possui_cartao_loja == true && $valor_compra >= 400 ? 0 : ($usuario_possui_cartao_loja == true && $valor_compra >= 300 ? 10 : ($usuario_possui_cartao_loja == true && $valor_compra >= 100 ? 25 : $valor_frete));
+
+        $recebeu_desconto_frete = $valor_frete != $valor_frete_aux ? true : false;
+        $valor_frete = $valor_frete_aux; */
+
 
         if($usuario_possui_cartao_loja == true && $valor_compra >= 400){
             $valor_frete = 0;
@@ -31,14 +39,19 @@
 
     <h1>Detalhes do pedido</h1>
 
-    <p>Possui cartão da loja?
+    <p>Possui cartão da loja? <?= $usuario_possui_cartao_loja? 'SIM' : 'NÃO'?> <!-- operador ternário -->
 
         <?php
-            if ($usuario_possui_cartao_loja) {  //$usuario_possui_cartao_loja = true não necessário
+
+            // <condição> ? true : false
+
+            
+
+            /* if ($usuario_possui_cartao_loja) {  //$usuario_possui_cartao_loja = true não necessário
                 echo 'SIM';
             } else {
                 echo 'NÃO';
-            }
+            } */
         
         ?>
     </p>
@@ -46,15 +59,7 @@
     <p>Valor da compra: <?= $valor_compra ?></p>
 
     <p>Recebeu desconto no frete?
-
-        <?php
-            if ($recebeu_desconto_frete) {
-                echo 'SIM';
-            } else {
-                echo 'NÃO';
-            }
-        
-        ?>
+            <?= $teste = $recebeu_desconto_frete? 'SIM' : 'NÃO'; ?>
     </p>
 
     <p>Valor da frete: <?= $valor_frete ?></p>
